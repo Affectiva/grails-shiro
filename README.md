@@ -1,4 +1,6 @@
 Grails 3 Shiro plugin
 =====================
 
-[![Build Status](https://api.travis-ci.org/Arkilog/grails-shiro.png)](http://travis-ci.org/Arkilog/grails-shiro)
+Affectiva branch of grails-shiro for Grails 3.0.17
+
+[![Build Status](https://api.travis-ci.org/affectiva/grails-shiro.png)](http://travis-ci.org/affectiva/grails-shiro)
