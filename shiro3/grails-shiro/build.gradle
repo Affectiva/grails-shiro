@@ -60,18 +60,20 @@ dependencyManagement {
 }
 
 dependencies {
-    provided 'org.springframework.boot:spring-boot-starter-logging'
-    provided "org.springframework.boot:spring-boot-starter-actuator"
-    provided "org.springframework.boot:spring-boot-autoconfigure"
-    provided "org.springframework.boot:spring-boot-starter-tomcat"
 
-    provided "org.grails:grails-web-boot"
-    provided "org.grails:grails-dependencies"
+    def springVersion = '1.2.7.RELEASE'
+    provided "org.springframework.boot:spring-boot-starter-logging:$springVersion"
+    provided "org.springframework.boot:spring-boot-starter-actuator:$springVersion"
+    provided "org.springframework.boot:spring-boot-autoconfigure:$springVersion"
+    provided "org.springframework.boot:spring-boot-starter-tomcat:$springVersion"
+
+    provided "org.grails:grails-web-boot:$grailsVersion"
+    provided "org.grails:grails-dependencies:$grailsVersion"
     provided 'javax.servlet:javax.servlet-api:3.1.0'
 
-    testCompile "org.grails:grails-plugin-testing"
+    testCompile "org.grails:grails-plugin-testing:$grailsVersion"
 
-    console "org.grails:grails-console"
+    console "org.grails:grails-console:$grailsVersion"
     def shiroVersion = '1.2.3'
     compile ("org.apache.shiro:shiro-core:$shiroVersion") {
         exclude module:'ejb'
